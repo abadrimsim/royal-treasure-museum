@@ -1,0 +1,366 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;500;800&display=swap');
+
+body {
+	background-color: #1c1c1c;
+	color: #c5c5c5;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	color: #a58545;
+	text-shadow: 0 0.5rem 1rem #111;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.section-light {
+	background-color: #2a2a2a;
+}
+
+.utility-container {
+	margin: 0 10%;
+	padding: 5% 0;
+}
+
+/* Nav Bar */
+
+.navbar {
+	padding: 0.5% 10%;
+	text-transform: uppercase;
+}
+
+.navbar img {
+	width: 3rem;
+	visibility: hidden;
+}
+
+nav.scrolled {
+	background-color: #181818;
+	transition: background-color 0.8s ease-in-out;
+	box-shadow: 0 0.5rem 1rem #141414;
+}
+
+nav.scrolled img {
+	visibility: visible;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+	color: #a58545;
+}
+
+/* Title Slider */
+
+.carousel-inner {
+	height: 100vh;
+}
+
+.carousel-text {
+	position: absolute;
+	z-index: 2;
+	margin: 20% 10%;
+	width: 40%;
+}
+
+.carousel-text p {
+	width: 100%;
+}
+
+.carousel-text h2 {
+	font-weight: 600;
+	font-size: 3.5rem;
+	margin-bottom: 1rem;
+}
+
+.btn {
+	margin-top: 1.5rem;
+	border-color: #c5c5c5;
+	color: #c5c5c5;
+	text-transform: uppercase;
+	border-width: 2px;
+}
+
+.btn:hover {
+	border-color: #a58545;
+	color: #a58545;
+	background-color: transparent;
+}
+
+.carousel-item {
+	transition: opacity 3s ease-in-out;
+	background-size: cover;
+	left: 0;
+	background-position: center;
+	animation: bg 30s linear infinite;
+	max-width: 150%;
+}
+
+.carousel-item img {
+	width: 130%;
+	margin-top: -10%;
+}
+
+/* History Section */
+
+.img-history {
+	width: 100%;
+	box-shadow: 0 0.5rem 1rem #0c0c0c;
+}
+
+.img-history-2 {
+	margin-top: 30%;
+}
+
+.history-text {
+	margin-top: 6%;
+	padding-left: 7%;
+}
+
+.history-text h2 {
+	margin-bottom: 2rem;
+	line-height: 3rem;
+}
+
+.history-text p {
+	width: 100%;
+}
+
+/* Visit Section */
+
+#visit .row {
+	margin: 0;
+}
+
+.visit-boxes {
+	margin: 2rem auto 0;
+	max-width: 22%;
+	padding-bottom: 1.5rem;
+}
+
+.visit-boxes i {
+	margin: 1.5rem 0;
+	color: #a58545;
+}
+
+.visit-boxes h3 {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.visit-boxes p {
+	font-size: 0.9rem;
+	line-height: 1rem;
+	width: 100%;
+}
+
+/* Volunteer Section */
+
+.parallax {
+	background-image: url('../img/Volunteer_At_Royal_Treasure_Museum_Now.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vh;
+	padding: 7% 10%;
+	text-align: center;
+}
+
+.parallax h2,
+p {
+	width: 60%;
+	margin: auto;
+}
+
+.parallax h2 {
+	margin-bottom: 0.5rem;
+}
+
+/* Gallery Section */
+
+.gallery-text {
+	margin: 0 10%;
+	padding: 5% 0 2rem;
+	text-align: right;
+}
+
+.gallery-text p {
+	display: inline;
+}
+
+.gallery-img {
+	padding: 0;
+	margin: 1.2rem 0.8rem;
+	height: 20rem;
+	overflow: hidden;
+	box-shadow: 0 0.5rem 1rem #0c0c0c;
+}
+
+.gallery-img p {
+	color: #fff;
+	position: absolute;
+	margin: 0 1rem;
+	bottom: 1.5rem;
+	visibility: visible;
+	z-index: 1;
+	line-height: 1rem;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.gallery-img img {
+	width: 100%;
+	filter: brightness(50%);
+	object-fit: cover;
+	transition: transform 1s ease-out;
+}
+
+.gallery-img:hover img {
+	transform: scale(1.05);
+	filter: brightness(100%);
+}
+
+.gallery-img:hover p {
+	visibility: hidden;
+}
+
+/* Animations */
+
+@keyframes bg {
+	0% {
+		-moz-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+	100% {
+		-moz-transform: translateX(-25%);
+		-webkit-transform: translateX(-25%);
+		-ms-transform: translateX(-25%);
+		transform: translateX(-25%);
+	}
+}
+
+/* Responsive Layout */
+
+@media (max-width: 990px) {
+	.navbar {
+		background-color: #181818;
+	}
+
+	.navbar img {
+		visibility: visible;
+	}
+
+	.carousel-inner {
+		height: 80vh;
+	}
+
+	.carousel-item img {
+		width: 130%;
+		margin-top: 0;
+	}
+
+	.carousel-text {
+		text-align: center;
+		width: 80%;
+		margin: 20% 10%;
+	}
+
+	.img-history {
+		width: 80%;
+		margin: 0 10%;
+	}
+
+	.img-history-2 {
+		margin-top: 0;
+	}
+
+	.history-text {
+		margin-top: 3%;
+		text-align: center;
+	}
+
+	#visit h2 {
+		width: 100%;
+	}
+
+	.visit-boxes {
+		margin: 1rem 1rem;
+		padding: 1rem;
+		max-width: 45%;
+	}
+}
+
+@media (max-width: 765px) {
+	.carousel-inner {
+		height: 70vh;
+	}
+
+	.carousel-text p {
+		display: none;
+	}
+
+	.img-history {
+		width: 50%;
+		margin: 5% 25%;
+	}
+
+	.visit-boxes {
+		max-width: 100%;
+	}
+
+	.parallax p {
+		width: 100%;
+	}
+
+	.gallery-container {
+		margin: 0 10%;
+		padding: 0 0 5% 0;
+	}
+}
+
+@media (max-width: 630px) {
+	.carousel-inner {
+		height: 60vh;
+	}
+}
+
+@media (max-width: 500px) {
+	.carousel-inner {
+		height: 55vh;
+	}
+	.carousel-text {
+		text-align: center;
+		margin: 20% auto;
+		padding: 0 10%;
+		width: auto;
+	}
+	.carousel-text h2 {
+		margin-bottom: 0.5rem;
+	}
+
+	.navbar img {
+		visibility: visible;
+		width: 2.5rem;
+	}
+
+	.carousel-text p {
+		display: none;
+	}
+}
+
+@media (max-width: 736px) {
+	.carousel-item {
+		-moz-animation: bg 18s linear infinite;
+		-webkit-animation: bg 18s linear infinite;
+		-ms-animation: bg 18s linear infinite;
+		animation: bg 18s linear infinite;
+	}
+}
